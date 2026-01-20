@@ -18,7 +18,7 @@ a {
 /* HERO */
 .hero {
   height: 90vh;
-  background-image: url("images/hero.jpg");
+  background-image: url("images/viceroy.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
