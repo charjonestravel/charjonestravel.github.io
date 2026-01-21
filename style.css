@@ -342,3 +342,94 @@ footer {
   }
 }
 
+.headshot-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.25rem;
+  display: block;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+/* TRAVEL WITH ME */
+.travel-with-me {
+  padding: 5rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.travel-intro {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3.5rem;
+}
+
+.travel-intro h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.travel-intro p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.travel-links {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+.travel-links a {
+  color: #1f4e5f;
+  font-weight: 500;
+}
+
+.travel-links span {
+  margin: 0 0.5rem;
+  color: #aaa;
+}
+
+.travel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.travel-card {
+  background: rgba(255,255,255,0.88);
+  padding: 2.5rem;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+  backdrop-filter: blur(6px);
+}
+
+.travel-card h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+}
+
+.travel-card ul,
+.travel-card ol {
+  padding-left: 1.2rem;
+  line-height: 1.6;
+}
+
+.travel-card.highlight {
+  background: linear-gradient(
+    135deg,
+    rgba(31,78,95,0.95),
+    rgba(58,124,137,0.95)
+  );
+  color: #fff;
+}
+
+.travel-card.highlight h3 {
+  color: #fff;
+}
+
+.travel-card.highlight li {
+  color: #f2f6f7;
+}
+
