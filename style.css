@@ -265,3 +265,13 @@ a {
     opacity: 1;
   }
 }
+/* =====================
+   FOOTER
+===================== */
+
+footer {
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 0.8rem;
+  color: #666;
+}
