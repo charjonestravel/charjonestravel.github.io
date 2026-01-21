@@ -201,3 +201,34 @@ footer {
   margin-bottom: 1rem;
 }
 
+.intro {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.headshot {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.primary-btn {
+  display: inline-block;
+  background: #1f4e5f; /* deep coastal blue */
+  color: white;
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: #163c4a;
+  transform: translateY(-2px);
+}
+
