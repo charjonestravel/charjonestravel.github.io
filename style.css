@@ -1,29 +1,32 @@
- /* GENERAL */
-
+/* =====================
+   GLOBAL STYLES
+===================== */
 
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
   background:
     linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
-    url("images/water.png") center/cover fixed;
+    url("images/water.png") center / cover fixed;
 }
 
-
 h1, h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 a {
   text-decoration: none;
 }
 
-/* HERO */
+/* =====================
+   HERO
+===================== */
+
 .hero {
   min-height: 85vh;
   background:
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-    url("images/nobu.jpg") center/cover no-repeat;
+    url("images/nobu.jpg") center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +39,6 @@ a {
   color: #fff;
 }
 
-
 .hero h1 {
   font-size: clamp(2.2rem, 5vw, 3.5rem);
   margin-bottom: 1rem;
@@ -47,210 +49,9 @@ a {
   margin-bottom: 2rem;
 }
 
-.hero-overlay {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 50px 40px;
-  max-width: 650px;
-  width: 100%;
-  border-radius: 16px;
-  text-align: center;
-}
-
-.hero-sub {
-  font-size: 1.05rem;
-  margin-bottom: 25px;
-}
-
-.hero-points {
-  list-style: none;
-  padding: 0;
-  margin: 25px 0;
-}
-
-.hero-points li {
-  margin-bottom: 10px;
-  font-size: 0.95rem;
-}
-
-
-/* BUTTON */
-.button {
-  background: #1f1f1f;
-  color: #ffffff;
-  padding: 14px 28px;
-  border-radius: 30px;
-  font-size: 0.9rem;
-}
-
-/* SECTIONS */
-.section {
-  padding: 80px 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-.section.light {
-  background: #fafafa;
-}
-
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-ul, ol {
-  padding-left: 20px;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 40px 20px;
-  font-size: 0.8rem;
-  color: #777;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.gallery img {
-  width: 100%;
-  border-radius: 10px;
-}
-.about {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
-  padding: 5rem 2rem;
-  align-items: center;
-}
-
-.about-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.about-images img {
-  width: 100%;
-  border-radius: 20px;
-  object-fit: cover;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-}
-
-.about-text {
-  max-width: 500px;
-}
-
-.about-text h2 {
-  margin-bottom: 1rem;
-}
-
-
-@media (max-width: 768px) {
-  .about-grid img {
-    height: 300px;
-  }
-
-  .gallery img {
-    height: 260px;
-  }
-}
-
-  .about-images {
-    grid-template-columns: 1fr;
-  }
-
-  .primary-btn {
-    width: 100%;
-    max-width: 300px;
-  }
-}
-
-
-.instagram {
-  text-align: center;
-}
-
-.insta-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 15px;
-  margin: 30px 0;
-}
-
-.insta-grid img {
-  width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.insta-grid img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
-}
-
-@media (max-width: 768px) {
-  .hero-overlay {
-    padding: 35px 25px;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero-sub {
-    font-size: 1rem;
-  }
-
-  .section {
-    padding: 60px 20px;
-  }
-}
-.section {
-  background: rgba(255, 255, 255, 0.92);
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: 40px auto;
-  border-radius: 16px;
-}
-
-.split-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  padding: 4rem 2rem;
-}
-
-.split-card {
-  background: rgba(255,255,255,0.85);
-  padding: 2.5rem;
-  border-radius: 20px;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-.split-card h2 {
-  margin-bottom: 1rem;
-}
-
-.intro {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
-.headshot {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1.5rem;
-}
+/* =====================
+   BUTTONS
+===================== */
 
 .primary-btn {
   display: inline-flex;
@@ -259,8 +60,7 @@ footer {
   padding: 0.9rem 2rem;
   border-radius: 999px;
   font-weight: 500;
-  text-decoration: none;
-  color: white;
+  color: #fff;
   background: linear-gradient(135deg, #1f4e5f, #3a7c89);
   box-shadow: 0 12px 30px rgba(31,78,95,0.25);
   transition: all 0.35s ease;
@@ -290,28 +90,30 @@ footer {
   opacity: 1;
 }
 
-.ig-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin: 2rem 0;
+/* =====================
+   SECTIONS
+===================== */
+
+.section {
+  background: rgba(255,255,255,0.92);
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 16px;
 }
 
-@media (min-width: 768px) {
-  .ig-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
 }
 
-.ig-grid img {
-  width: 100%;
-  border-radius: 14px;
-  transition: transform 0.3s ease;
+ul, ol {
+  padding-left: 1.2rem;
 }
 
-.ig-grid img:hover {
-  transform: scale(1.03);
-}
+/* =====================
+   ABOUT
+===================== */
 
 .about {
   padding: 5rem 2rem;
@@ -336,6 +138,53 @@ footer {
 
 .about-text {
   text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* =====================
+   SPLIT SECTION
+===================== */
+
+.split-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.split-card {
+  background: rgba(255,255,255,0.85);
+  padding: 2.5rem;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* =====================
+   GALLERIES
+===================== */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* =====================
+   INSTAGRAM
+===================== */
+
+.instagram {
+  text-align: center;
 }
 
 .insta-grid {
@@ -357,3 +206,36 @@ footer {
   transform: scale(1.05);
 }
 
+/* =====================
+   FOOTER
+===================== */
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* =====================
+   MOBILE
+===================== */
+
+@media (max-width: 768px) {
+  .about-grid img {
+    height: 300px;
+  }
+
+  .gallery img {
+    height: 260px;
+  }
+
+  .primary-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+}
