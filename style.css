@@ -176,4 +176,22 @@ footer {
   border-radius: 16px;
 }
 
+.split-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.split-card {
+  background: rgba(255,255,255,0.85);
+  padding: 2.5rem;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.split-card h2 {
+  margin-bottom: 1rem;
+}
 
