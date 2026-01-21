@@ -121,22 +121,50 @@ footer {
   border-radius: 10px;
 }
 .about {
-  display: flex;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  padding: 5rem 2rem;
   align-items: center;
 }
 
-.about img {
-  width: 220px;
-  border-radius: 100%;
+.about-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
+
+.about-images img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  margin-bottom: 1rem;
+}
+
 
 @media (max-width: 768px) {
   .about {
-    flex-direction: column;
     text-align: center;
   }
+
+  .about-images {
+    grid-template-columns: 1fr;
+  }
+
+  .primary-btn {
+    width: 100%;
+    max-width: 300px;
+  }
 }
+
 
 .instagram {
   text-align: center;
