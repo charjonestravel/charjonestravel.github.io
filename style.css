@@ -23,7 +23,7 @@ a {
   min-height: 85vh;
   background:
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-    url("images/hero.jpg") center/cover no-repeat;
+    url("images/nobu.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   padding: 2rem;
