@@ -3,12 +3,13 @@
 ===================== */
 
 body {
-  margin: 0;
-  font-family: "Inter", sans-serif;
   background:
-    linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
-    url("images/water.png") center / cover fixed;
-  color: #1f1f1f;
+    linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.75),
+      rgba(255,255,255,0.6)
+    ),
+    url("images/water.png") center/cover fixed;
 }
 
 h1, h2 {
