@@ -473,4 +473,32 @@ footer {
     margin-bottom: 1rem;
   }
 }
+/* PRIMARY BUTTON */
+.primary-btn {
+  background: linear-gradient(135deg, #1f4e5f, #3a7c89);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+.primary-btn:hover {
+  background: linear-gradient(135deg, #163a46, #2f6974);
+  transform: translateY(-3px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.3);
+}
+
+/* SECONDARY BUTTON */
+.primary-btn.secondary {
+  background: transparent;
+  color: #1f4e5f;
+  border: 1.5px solid #1f4e5f;
+  transition: all 0.3s ease;
+}
+
+/* SECONDARY HOVER */
+.primary-btn.secondary:hover {
+  background: #1f4e5f;
+  color: #fff;
+  transform: translateY(-3px);
+}
 
